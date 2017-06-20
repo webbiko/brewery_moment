@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/brewery_card_view_height"
+    android:layout_marginBottom="@dimen/item_brewery_card_view_margin_bottom"
+    android:layout_marginEnd="@dimen/item_brewery_card_view_margin_end"
+    android:layout_marginStart="@dimen/item_brewery_card_view_margin_start"
+    android:layout_marginTop="@dimen/item_brewery_card_view_margin_top"
+    android:background="@color/white"
+    android:elevation="@dimen/item_brewery_card_view_elevation"
+    card_view:cardCornerRadius="@dimen/item_beer_card_view_corner_radius">
+
+    <RelativeLayout
+        android:id="@+id/item_brewery_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/selectableItemBackground">
+
+
+        <ImageView
+            android:id="@+id/image_view_beverage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/brewery_image_view_beverage_height"
+            android:paddingTop="@dimen/brewery_image_view_beverage_padding_top"
+            android:src="@drawable/placeholder_no_image"/>
+
+        <ProgressBar
+            android:id="@+id/progress_load_image"
+            android:layout_width="@dimen/brewery_progress_load_image_width"
+            android:layout_height="@dimen/brewery_progress_load_image_height"
+            android:layout_alignBottom="@id/image_view_beverage"
+            android:layout_alignLeft="@id/image_view_beverage"
+            android:layout_alignRight="@id/image_view_beverage"
+            android:layout_alignTop="@id/image_view_beverage"
+            android:layout_marginBottom="@dimen/brewery_progress_load_image_margin_bottom"
+            android:indeterminate="true"
+            android:paddingTop="20dp"/>
+
+        <TextView
+            android:id="@+id/text_view_brewery_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/image_view_beverage"
+            android:layout_marginLeft="@dimen/text_view_brewery_name_margin_left"
+            android:layout_marginRight="@dimen/text_view_brewery_name_margin_right"
+            android:layout_marginTop="@dimen/text_view_brewery_name_margin_top"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_view_brewery_name_text_size"
+            android:textStyle="bold"
+            tools:text="wagner"/>
+
+        <TextView
+            android:id="@+id/text_view_brewery_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text_view_brewery_name"
+            android:layout_marginLeft="@dimen/text_view_brewery_description_margin_left"
+            android:layout_marginRight="@dimen/text_view_brewery_description_margin_right"
+            android:layout_marginTop="@dimen/text_view_brewery_name_margin_top"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_view_brewery_description_text_size"
+            tools:text="wagner asdklnasd asdasd asasdsads asd asdas da sda sd asd asd as das dasdasdasd asd as dasd asdbakjsdhkjasd as asdajksdjhaskdaskjdhkjashdkjashdkjashdkjashdkjashdkajskajsd asdkjaskjdbaskjbdaskdkasdbaskdbasbdksabjdsa"/>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

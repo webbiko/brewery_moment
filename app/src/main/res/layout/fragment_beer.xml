@@ -1,0 +1,40 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:id="@+id/beer_container"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/app_background"
+             tools:context="com.brewery.app.presentation.breweries.details.BreweryFragment">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/beers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_load_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:indeterminate="true"/>
+
+    <TextView
+        android:id="@+id/text_view_no_beers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/text_view_no_beers_margin_left"
+        android:layout_marginRight="@dimen/text_view_no_beers_margin_right"
+        android:text="@string/text_view_no_beers_warning"
+        android:textSize="@dimen/text_view_no_beers_text_size"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+</FrameLayout>

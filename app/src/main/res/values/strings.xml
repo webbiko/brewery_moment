@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">BreweryMoment</string>
+    <string name="title_home">Home</string>
+    <string name="title_brewery">Breweries</string>
+    <string name="title_brewery_detail">Brewery Detail</string>
+    <string name="title_beer_detail">Beer Detail</string>
+    <string name="title_about">About</string>
+    <string name="title_notifications">Notifications</string>
+
+    <string name="error_no_internet_connection">Internet connection is not available.</string>
+    <string name="error_generic">Operation cannot be completed. Please try again later.</string>
+
+    <string name="text_view_no_beers_warning">It was not possible to load the beers. Please, swipe to refresh to try again!</string>
+    <string name="beer_detail_unavailable">No detail available!</string>
+    <string name="brewery_no_description_available">No description available for this brewery!</string>
+
+    <string name="text_view_no_breweries_warning">It was not possible to load the breweries. Please, swipe to refresh to try again!</string>
+</resources>
